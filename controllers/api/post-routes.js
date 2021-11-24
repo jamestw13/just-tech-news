@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const {json} = require('body-parser');
 const {Post, User, Vote, Comment} = require('../../models');
 const {sequelize} = require('../../models/User');
 

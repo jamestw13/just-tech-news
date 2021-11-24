@@ -1,5 +1,4 @@
 const {Model, DataTypes} = require('sequelize');
-const {ne} = require('sequelize/types/lib/operators');
 const sequelize = require('../config/connection.js');
 
 class Post extends Model {
