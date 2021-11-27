@@ -16,7 +16,9 @@ const sess = {
   }),
 };
 
-const hbs = exphbs.create({});
+const helpers = require('./utils/helpers');
+
+const hbs = exphbs.create({helpers});
 const app = express();
 const PORT = process.env.PORT || 3001;
 
