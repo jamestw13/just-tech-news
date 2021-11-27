@@ -2,7 +2,8 @@
   {{#each posts as |post|}}
     <li>
       <article class='post'>
-        <div class='title'><a href='{{post.post_url}}' target='_blank'>{{post.title}}</a>
+        <div class='title'>
+          <a href='{{post.post_url}}' target='_blank'>{{post.title}}</a>
           <span>({{post.post_url}})</span>
         </div>
         <div class='meta'>{{post.vote_count}}
