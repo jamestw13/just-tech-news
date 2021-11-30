@@ -3,6 +3,7 @@ const Post = require('./Post');
 const Vote = require('./Vote');
 const Comment = require('./Comment');
 
+// User/Post association
 User.hasMany(Post, {
   foreignKey: 'user_id',
 });
@@ -11,6 +12,7 @@ Post.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
+// Vote table bridge
 User.belongsToMany(Post, {
   through: Vote,
   as: 'voted_posts',

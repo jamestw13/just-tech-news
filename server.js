@@ -20,7 +20,7 @@ const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({helpers});
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
